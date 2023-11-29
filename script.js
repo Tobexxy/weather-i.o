@@ -29,7 +29,7 @@ async function checkWeather(city){
     else if(data.weather[0].icon == "02n"){
         weatherIcon.src = "img/Moon cloud.png"
     }
-    else if(data.weather[0].main == "Mist"){
+    else if(data.weather[0].icon == "50d"){
         weatherIcon.src = "img/Cloud slow wind.png"
     }
     else if(data.weather[0].main == "Drizzle"){

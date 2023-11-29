@@ -26,16 +26,22 @@ async function checkWeather(city){
     else if(data.weather[0].icon == "01n"){
         weatherIcon.src = "img/Moon.png"
     }
+    else if(data.weather[0].icon == "02n"){
+        weatherIcon.src = "img/Moon cloud.png"
+    }
     else if(data.weather[0].main == "Mist"){
         weatherIcon.src = "img/Cloud slow wind.png"
     }
     else if(data.weather[0].main == "Drizzle"){
-        weatherIcon.src = "img/Sun cloud little rain.png"
+        weatherIcon.src = "img/Cloud little rain.png"
     }
-    else if(data.weather[0].main == "Rain"){
-        weatherIcon.src = "img/shower rain.png"
+    else if(data.weather[0].icon == "10d"){
+        weatherIcon.src = "img/Sun cloud angled rain.png"
     }
-    else if(data.weather[0].description == "few clouds"){
+    else if(data.weather[0].icon == "10n"){
+        weatherIcon.src = "img/Mood cloud angled rain.png"
+    }
+    else if(data.weather[0].icon == "02d"){
         weatherIcon.src = "img/few clouds.png"
     }
     else if(data.weather[0].description == "scattered clouds"){
@@ -47,6 +53,7 @@ async function checkWeather(city){
     else if(data.weather[0].description == "overcast clouds"){
         weatherIcon.src = "img/broken clouds.png"
     }
+    
    
 }
 searchBtn.addEventListener("click", ()=>{

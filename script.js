@@ -39,7 +39,7 @@ async function checkWeather(city){
         weatherIcon.src = "img/Sun cloud angled rain.png"
     }
     else if(data.weather[0].icon == "10n"){
-        weatherIcon.src = "img/Mood cloud angled rain.png"
+        weatherIcon.src = "img/Moon cloud angled rain.png"
     }
     else if(data.weather[0].icon == "02d"){
         weatherIcon.src = "img/few clouds.png"

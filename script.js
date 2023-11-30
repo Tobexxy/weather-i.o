@@ -83,14 +83,10 @@ async function checkWeather(city){
    
 }
 searchBtn.addEventListener("click", ()=>{
-    checkWeather(searchBox.value); //// This code checks goe the data in ajson format
+    checkWeather(searchBox.value); //// This code checks goe the data in ajson format . this make the click buton initiate search
 })
 
-
-function Alert(){
-    alert(enter.value);
-}
-enter.addEventListener('keyup', (e) => {
+enter.addEventListener('keyup', (e) => {// this code makes it possible for the enter button to initiate search
     if (e.keyCode === 13) {
         checkWeather(searchBox.value);
         
